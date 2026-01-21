@@ -1,5 +1,5 @@
 // =========================
-//  TESLA LOGO NA CANVASU
+//  1️⃣ TESLA LOGO NA CANVASU
 // =========================
 document.addEventListener("DOMContentLoaded", () => {
   const canvas = document.getElementById("logoCanvas");
@@ -7,25 +7,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const ctx = canvas.getContext("2d");
 
-  // Shrani stanje
   ctx.save();
-
-  // LOGO nastavitve
-  const logoWidth = 266;
-  const logoHeight = 252;
   const scale = 0.20;
-
   ctx.scale(scale, scale);
   ctx.translate(0, 0);
-
   ctx.strokeStyle = "rgba(0,0,0,0)";
-  ctx.fillStyle = "#000"; 
+  ctx.fillStyle = "#000";
   ctx.miterLimit = 4;
 
+  // Srednji del logotipa
   ctx.save();
   ctx.beginPath();
-
-  // Srednji del logotipa
   ctx.moveTo(139, 253);
   ctx.lineTo(175, 53);
   ctx.bezierCurveTo(175, 53, 219, 57, 221, 72);
@@ -42,10 +34,9 @@ document.addEventListener("DOMContentLoaded", () => {
   ctx.stroke();
   ctx.restore();
 
+  // Zgornji lok logotipa
   ctx.save();
   ctx.beginPath();
-
-  // Zgornji lok logotipa
   ctx.moveTo(139, 15);
   ctx.bezierCurveTo(175, 15, 217, 21, 259, 39);
   ctx.bezierCurveTo(265, 29, 266, 25, 266, 25);
@@ -60,16 +51,35 @@ document.addEventListener("DOMContentLoaded", () => {
   ctx.restore();
 });
 
+// =========================
+//  2️⃣ SWEET ALERT OB KLIKU NA LOGO
+// =========================
+document.addEventListener("DOMContentLoaded", () => {
+  const canvas = document.getElementById("logoCanvas");
+  if (!canvas) return;
+
+  canvas.style.cursor = "pointer";
+  canvas.addEventListener("click", () => {
+    Swal.fire({
+      title: 'Avtor projekta',
+      text: 'Martin Furlan',
+      icon: 'info',
+      confirmButtonText: 'V redu',
+	  confirmButtonColor: '#171a20'
+    });
+  });
+});
+
+// =========================
+//  3️⃣ CAROUSEL
+// =========================
 document.addEventListener("DOMContentLoaded", () => {
   const track = document.querySelector('.carousel-track');
   const slides = Array.from(document.querySelectorAll('.carousel-slide'));
   const prevBtn = document.querySelector('.carousel-btn.prev');
   const nextBtn = document.querySelector('.carousel-btn.next');
 
-  if (!track || slides.length === 0 || !prevBtn || !nextBtn) {
-    console.warn("Carousel elementi niso najdeni.");
-    return;
-  }
+  if (!track || slides.length === 0 || !prevBtn || !nextBtn) return;
 
   let index = 0;
 
@@ -89,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // =========================
-//  LETO V FOOTERJU
+//  4️⃣ LETO V FOOTERJU
 // =========================
 document.addEventListener("DOMContentLoaded", () => {
   const yearSpan = document.getElementById("year");
