@@ -35,29 +35,6 @@ Projekt vključuje:
 
 ---
 
-## 🖼 Slike projekta
-
-<table>
-  <tr>
-    <td align="center"><strong>Glavna stran</strong></td>
-    <td align="center"><strong>Vsebina</strong></td>
-    <td align="center"><strong>Dizajn</strong></td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="images/teslaLogo.png" width="120px">
-    </td>
-    <td align="center">
-      <img src="images/" width="120px">
-    </td>
-    <td align="center">
-      <img src="img/tesla_design.png" width="120px">
-    </td>
-  </tr>
-</table>
-
----
-
 ## 🚀 Gostovanje
 Projekt je gostovan z uporabo **GitHub Pages** in je javno dostopen preko zgornje povezave.
 
