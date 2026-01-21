@@ -45,10 +45,10 @@ Projekt vključuje:
   </tr>
   <tr>
     <td align="center">
-      <img src="img/tesla_home.png" width="120px">
+      <img src="images/teslaLogo.png" width="120px">
     </td>
     <td align="center">
-      <img src="img/tesla_content.png" width="120px">
+      <img src="images/" width="120px">
     </td>
     <td align="center">
       <img src="img/tesla_design.png" width="120px">
