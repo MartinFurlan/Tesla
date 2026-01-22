@@ -3,9 +3,6 @@
 Ta projekt predstavlja spletno stran na temo **Tesla**, objavljeno preko **GitHub Pages**.  
 Stran je namenjena predstavitvi dizajna, vsebine in spletnih tehnologij.
 
-🔗 **Predogled spletne strani:**  
-https://martinfurlan.github.io/Tesla/
-
 ---
 
 ## 📌 O projektu
