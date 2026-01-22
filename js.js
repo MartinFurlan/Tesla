@@ -1,6 +1,4 @@
-// =========================
-//  1️⃣ TESLA LOGO NA CANVASU
-// =========================
+
 document.addEventListener("DOMContentLoaded", () => {
   const canvas = document.getElementById("logoCanvas");
   if (!canvas) return;
@@ -51,9 +49,6 @@ document.addEventListener("DOMContentLoaded", () => {
   ctx.restore();
 });
 
-// =========================
-//  2️⃣ SWEET ALERT OB KLIKU NA LOGO
-// =========================
 document.addEventListener("DOMContentLoaded", () => {
   const canvas = document.getElementById("logoCanvas");
   if (!canvas) return;
@@ -70,9 +65,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// =========================
-//  3️⃣ CAROUSEL
-// =========================
 document.addEventListener("DOMContentLoaded", () => {
   const track = document.querySelector('.carousel-track');
   const slides = Array.from(document.querySelectorAll('.carousel-slide'));
@@ -98,12 +90,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// =========================
-//  4️⃣ LETO V FOOTERJU
-// =========================
 document.addEventListener("DOMContentLoaded", () => {
   const yearSpan = document.getElementById("year");
   if (yearSpan) {
     yearSpan.textContent = new Date().getFullYear();
   }
 });
+
